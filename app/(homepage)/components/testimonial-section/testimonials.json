@@ -1,0 +1,26 @@
+[
+  {
+    "avatar": "/testimonial-images/peasy.png",
+    "text": "Working with this team was a game-changer for our business. They took our vision and brought it to life with incredible attention to detail and creativity. The project was completed on time, and the end result exceeded all expectations. We’ve seen a significant boost in our website traffic and customer engagement!",
+    "from": "Pavle Mitić",
+    "role": "CEO & Founder",
+    "firm": "Peasy",
+    "link": "https://peasy.rs/"
+  },
+  {
+    "avatar": "/testimonial-images/milos-rad.png",
+    "text": "The team understood exactly what I needed from the start and delivered a website that perfectly matched my vision. They were incredibly responsive throughout the project, and the final result was nothing short of outstanding. My online presence has grown significantly thanks to their expertise.",
+    "from": "Miloš Radivojević",
+    "role": "Freelance Interaction Designer",
+    "firm": "Milos Radd",
+    "link": "https://milos-radd.com/"
+  },
+  {
+    "avatar": "/testimonial-images/emil-fitness.png",
+    "text": "I’ve been through several web agencies before, but none have understood my business needs like this team. Their custom solution has improved both the functionality and design of my site, resulting in increased customer engagement and sales.",
+    "from": "Emil Pavelkić",
+    "role": "Manager and Personal Trainer",
+    "firm": "MegaGym",
+    "link": "https://megagym.rs/"
+  }
+]

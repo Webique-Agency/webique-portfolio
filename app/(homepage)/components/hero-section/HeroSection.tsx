@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="hero-section-wrapper">
+        <section className="generic-section-wrapper hero-section-wrapper">
             <div className="content">
                 <div className="client-info">
                     <Image width={250} height={250} className="client-image" src="client-bubbles.png" alt="Clients"/>

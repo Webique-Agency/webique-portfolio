@@ -1,14 +1,10 @@
 import React from 'react';
 import "./SuccessSection.style.scss";
+import ContentSection from "@/app/components/content-section/ContentSection";
 
 export default function SuccessSection() {
     return (
-        <section>
-            <div className="generic-section-header">
-                <h3>PROVEN SUCCESS</h3>
-                <div className="line"></div>
-            </div>
-
+        <ContentSection title={"PROVEN SUCCESS"}>
             <div className="success-description-wrapper">
                 <h6 className="light-text">
                     Our team is a dynamic group of passionate and experienced professionals dedicated to delivering
@@ -36,6 +32,6 @@ export default function SuccessSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </ContentSection>
     );
 }

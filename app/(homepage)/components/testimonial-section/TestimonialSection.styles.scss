@@ -1,0 +1,48 @@
+@use "../../../common";
+
+.testimonial-cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .testimonial-card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid common.$shade;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    img {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+
+    .testimonial-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 12.5rem;
+
+      @media (max-width: 1024px) {
+        height: 100%;
+        gap: 2rem;
+      }
+
+      .author-wrapper {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
