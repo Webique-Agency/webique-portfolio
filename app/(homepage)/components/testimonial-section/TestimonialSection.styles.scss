@@ -17,9 +17,10 @@
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
-    border: 1px solid common.$shade;
+    outline: 1px dashed common.$shade;
     padding: 1rem;
     border-radius: 0.5rem;
+    width: 100%;
 
     img {
       width: 3rem !important;

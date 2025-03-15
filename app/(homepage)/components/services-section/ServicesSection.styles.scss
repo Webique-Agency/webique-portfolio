@@ -2,10 +2,11 @@
 
 .services-wrapper {
   display: grid;
-  border: 1px solid common.$shade;
+  outline: 1px solid common.$shade;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: all 150ms ease-in-out;
+  gap: 1px;
 
   // Mobile layout (ispod 1024px)
   grid-template-columns: 1fr;
@@ -59,12 +60,13 @@
 
   .service-card {
     padding: 2rem 1rem;
-    border: 1px solid common.$shade;
+    outline: 1px solid common.$shade;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1rem;
+    transition: all 150ms ease-in-out;
 
     .service-text {
       height: min-content;

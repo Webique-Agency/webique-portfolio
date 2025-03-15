@@ -2,14 +2,18 @@ import HeroSection from "@/app/(homepage)/components/hero-section/HeroSection";
 import SuccessSection from "@/app/(homepage)/components/success-section/SuccessSection";
 import TestimonialSection from "@/app/(homepage)/components/testimonial-section/TestimonialSection";
 import ServicesSection from "@/app/(homepage)/components/services-section/ServicesSection";
+import ProjectsSection from "@/app/(homepage)/components/projects-section/ProjectsSection";
+import WhyWeStandOutSection from "@/app/(homepage)/components/why-we-stand-out-section/WhyWeStandOutSection";
 
 export default function Home() {
-    return (
-        <div>
-            <HeroSection/>
-            <SuccessSection/>
-            <TestimonialSection/>
-            <ServicesSection/>
-        </div>
-    );
+	return (
+		<div>
+			<HeroSection/>
+			<SuccessSection/>
+			<TestimonialSection/>
+			<ProjectsSection/>
+			<ServicesSection/>
+			<WhyWeStandOutSection/>
+		</div>
+	);
 }

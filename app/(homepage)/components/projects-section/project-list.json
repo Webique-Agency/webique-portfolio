@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Miloš Radd",
+    "splashImage": "/project-images/milos-radd.png",
+    "link": "https://milos-radd.com/",
+    "services": [
+      "Website Development"
+    ]
+  },
+  {
+    "name": "Peasy",
+    "splashImage": "/project-images/peasy.png",
+    "link": "https://peasy.rs/",
+    "services": [
+      "Website Development",
+      "Website Design",
+      "SEO Optimization"
+    ]
+  },
+  {
+    "name": "iMET",
+    "splashImage": "/project-images/imet.png",
+    "link": "https://imet.metrpolitan.ac.rs/",
+    "services": [
+      "SaaS Development",
+      "UI/UX Design"
+    ]
+  },
+  {
+    "name": "Libra Lab",
+    "splashImage": "/project-images/libra-lab.png",
+    "link": "https://libralab.rs/",
+    "services": [
+      "Website Development",
+      "UI/UX Design",
+      "SEO Optimization"
+    ]
+  }
+]
