@@ -4,6 +4,7 @@ import TestimonialSection from "@/app/(homepage)/components/testimonial-section/
 import ServicesSection from "@/app/(homepage)/components/services-section/ServicesSection";
 import ProjectsSection from "@/app/(homepage)/components/projects-section/ProjectsSection";
 import WhyWeStandOutSection from "@/app/(homepage)/components/why-we-stand-out-section/WhyWeStandOutSection";
+import OurApproachSection from "@/app/(homepage)/components/our-approach-section/OurApproachSection";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<ProjectsSection/>
 			<ServicesSection/>
 			<WhyWeStandOutSection/>
+			<OurApproachSection/>
 		</div>
 	);
 }

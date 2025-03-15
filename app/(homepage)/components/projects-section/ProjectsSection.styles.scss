@@ -20,6 +20,16 @@
     gap: 1rem;
     padding: 2rem;
     outline: 1px solid common.$shade;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: common.$shade;
+
+      * {
+        color: common.$primary-color;
+        transition: all 150ms ease-in-out;
+      }
+    }
 
     img {
       width: 100%;

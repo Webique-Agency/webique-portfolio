@@ -12,8 +12,7 @@ export default function ProjectsSection() {
 		<ContentSection title={"FEATURED PROJECTS"}>
 			<div className="projects-wrapper">
 				{projectList.map((project, projectIndex) => (
-					/*TODO: Set link to specific project page or just a hyperlink*/
-					<Link href={project.link} key={projectIndex} className="project-card">
+					<Link href={project.link} target={"_blank"} key={projectIndex} className="project-card">
 						<Image width={250} height={250} src={project.splashImage} alt={project.name}/>
 						<div className="project-text-wrapper">
 							<h4>{project.name}</h4>
