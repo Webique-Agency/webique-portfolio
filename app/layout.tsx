@@ -27,7 +27,7 @@ export default function RootLayout({children}: Readonly<{
 		<html lang="en">
 		<body>
 		<LenisScrollProvider>
-			<main className="lg:w-[1360px] max-[1025px]:px-8 mx-auto">
+			<main>
 				<Navbar/>
 				{children}
 			</main>
