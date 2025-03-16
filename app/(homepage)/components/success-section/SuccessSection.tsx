@@ -19,15 +19,15 @@ export default function SuccessSection() {
                         <h6>Successful projects</h6>
                     </div>
                     <div className="stat-card">
-                        <h4 className="primary-color">3+YEARS</h4>
+                        <h4 className="primary-color">3+ YEARS</h4>
                         <h6>Experience</h6>
                     </div>
                     <div className="stat-card">
-                        <h4 className="primary-color">85%+</h4>
+                        <h4 className="primary-color">85% +</h4>
                         <h6>Client retention rate</h6>
                     </div>
                     <div className="stat-card">
-                        <h4 className="primary-color">30%+</h4>
+                        <h4 className="primary-color">30% +</h4>
                         <h6>Conversion rate increase</h6>
                     </div>
                 </div>
