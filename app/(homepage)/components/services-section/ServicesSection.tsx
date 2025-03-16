@@ -28,7 +28,7 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <ContentSection title={"SERVICES WE PROVIDE"}>
+        <ContentSection title={"SERVICES WE PROVIDE"} id={"services"}>
             <div className="services-wrapper">
                 {services.map((service, index) => (
                     <Link key={index} className={`service-card div${index + 1}`} href={"/"}>
