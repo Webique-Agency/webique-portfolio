@@ -5,23 +5,28 @@ import Link from "next/link";
 
 const services = [
     {
-        service: "Webiste Development",
+        service: "Website Development",
+        path: "website-development",
         description: "Bring your ideas to life with custom-built websites designed for performance and scalability."
     },
     {
-        service: "Webiste Design",
+        service: "Website Design",
+        path: "website-development",
         description: "Engage your audience with stunning designs crafted for seamless navigation and visual impact."
     },
     {
         service: "SaaS Development",
+        path: "website-development",
         description: "Transform your operations with innovative SaaS platforms tailored to your business growth."
     },
     {
         service: "UI/UX Design",
+        path: "website-development",
         description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
     },
     {
-        service: "SEO Optimizaiton",
+        service: "SEO Optimization",
+        path: "website-development",
         description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
     },
 ]
@@ -31,7 +36,7 @@ export default function ServicesSection() {
         <ContentSection title={"SERVICES WE PROVIDE"} id={"services"}>
             <div className="services-wrapper">
                 {services.map((service, index) => (
-                    <Link key={index} className={`service-card div${index + 1}`} href={"/"}>
+                    <Link key={index} className={`service-card div${index + 1}`} href={service.path}>
                         <h4 className="service-number primary-color">
                             0{index + 1}
                         </h4>
