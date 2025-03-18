@@ -5,6 +5,7 @@ import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {ArrowUpRight, ChevronDown} from "lucide-react";
 import Image from "next/image";
+import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 
 export default function Navbar() {
 
@@ -34,14 +35,12 @@ export default function Navbar() {
             <div className="inline-flex gap-8 items-center">
                 <Link href={"/#services"} className="inline-flex items-center gap-1">
                     Services
-                    <ChevronDown size={16}/>
                 </Link>
                 <Link href={"/"}>Projects</Link>
                 <Link href={"/"}>About</Link>
-                <Button variant={scrollYPage > 500 ? "default" : "ghost"}>
-                    Schedule a call
-                    <ArrowUpRight/>
-                </Button>
+
+                <ScheduleACallButton variant={scrollYPage > 500 ? "default" : "ghost"}
+                                     withIcon={true}></ScheduleACallButton>
             </div>
         </nav>
     );

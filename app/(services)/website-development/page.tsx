@@ -1,14 +1,14 @@
 "use client";
 
 import React, {useState} from 'react';
-import ServiceHeader from "@/app/components/service-header/ServiceHeader";
+import ServiceHeader from "@/app/(services)/components/service-header/ServiceHeader";
 import "./WebsiteDevelopment.styles.scss";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {Check, Info, Minus, Stars} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
-import FaqSection from "@/app/(services)/faq-section/FaqSection";
+import FaqSection from "@/app/(services)/components/faq-section/FaqSection";
 
 function Page() {
 
@@ -45,7 +45,7 @@ function Page() {
     ]
 
     return (
-        <section className="website-development-section">
+        <section className="website-development-section service-section">
             <ServiceHeader
                 serviceName={"Website Development"}
                 serviceDescription={"Transparent and flexible pricing for any type of website. Choose a plan that suits your business the best and get started today!"}

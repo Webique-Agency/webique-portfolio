@@ -11,22 +11,22 @@ const services = [
     },
     {
         service: "Website Design",
-        path: "website-development",
+        path: "website-design",
         description: "Engage your audience with stunning designs crafted for seamless navigation and visual impact."
     },
     {
         service: "SaaS Development",
-        path: "website-development",
+        path: "saas-development",
         description: "Transform your operations with innovative SaaS platforms tailored to your business growth."
     },
     {
         service: "UI/UX Design",
-        path: "website-development",
+        path: "ui-ux-design",
         description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
     },
     {
         service: "SEO Optimization",
-        path: "website-development",
+        path: "seo-optimization",
         description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
     },
 ]

@@ -119,6 +119,23 @@ button, h6 {
   }
 }
 
+.service-section {
+  position: relative;
+
+  *:not(.service-background) {
+    position: relative;
+    z-index: 2;
+  }
+
+  .service-background {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    z-index: 0;
+  }
+}
+
+
 .lucide {
   stroke-width: 1.75px;
   min-width: 1.5rem;

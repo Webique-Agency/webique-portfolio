@@ -15,7 +15,7 @@ export default function ServiceHeader({serviceName, serviceDescription}: {
                 <h1><span className="primary-color">{parts[0]}</span> {parts.slice(1).join("")}</h1>
                 <h1>Plans and Pricing</h1>
             </div>
-            <p className="light-text">{serviceDescription}</p>
+            <p className="light-text max-w-xl">{serviceDescription}</p>
         </div>
     );
 }

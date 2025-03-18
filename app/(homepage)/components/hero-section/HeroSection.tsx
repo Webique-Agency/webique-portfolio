@@ -4,6 +4,7 @@ import {Button} from "@/components/ui/button";
 import {ArrowUpRight} from "lucide-react";
 import "./HeroSection.styles.scss"
 import Image from "next/image";
+import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 
 export default function HeroSection() {
     return (
@@ -18,10 +19,7 @@ export default function HeroSection() {
                     <h6 className="description">We ensure that your ideas don’t just remain concepts but evolve into
                         fully functional and impactful solutions.</h6>
                     <div className="buttons-wrapper">
-                        <Button>
-                            Schedule a call
-                            <ArrowUpRight/>
-                        </Button>
+                        <ScheduleACallButton variant={"default"} withIcon={true}/>
                         <Button variant={"outline"}>
                             Learn more
                         </Button>
