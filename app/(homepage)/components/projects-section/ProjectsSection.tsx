@@ -25,10 +25,10 @@ export default function ProjectsSection() {
 					</Link>
 				))}
 			</div>
-			<Button variant={"outline"} className="w-full mt-8">
-				See all projects
-				<ChevronRight/>
-			</Button>
+			{/*<Button variant={"outline"} className="w-full mt-8">*/}
+			{/*	See all projects*/}
+			{/*	<ChevronRight/>*/}
+			{/*</Button>*/}
 		</ContentSection>
 	);
 }

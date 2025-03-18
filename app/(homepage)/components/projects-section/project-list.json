@@ -20,7 +20,7 @@
   {
     "name": "iMET",
     "splashImage": "/project-images/imet.png",
-    "link": "https://imet.metrpolitan.ac.rs/",
+    "link": "https://imet.metropolitan.ac.rs/login/",
     "services": [
       "SaaS Development",
       "UI/UX Design"

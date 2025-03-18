@@ -29,7 +29,7 @@ export default function Page() {
                              ]}/>
             </div>
 
-            <FaqSection service={"websiteDevelopment"}/>
+            <FaqSection service={"uiUxDesign"}/>
         </section>
     );
 }
