@@ -26,7 +26,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="animation">
-                <HeroAnimation/>
+                {/*<HeroAnimation/>*/}
             </div>
         </section>
     );
