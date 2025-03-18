@@ -4,8 +4,6 @@ import projectList from "./project-list.json";
 import Image from "next/image";
 import Link from "next/link";
 import "./ProjectsSection.styles.scss"
-import {Button} from "@/components/ui/button";
-import {ChevronRight} from "lucide-react";
 
 export default function ProjectsSection() {
 	return (

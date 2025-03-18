@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroAnimation from "@/app/(homepage)/components/hero-section/hero-animation/HeroAnimation";
 import {Button} from "@/components/ui/button";
-import {ArrowUpRight} from "lucide-react";
 import "./HeroSection.styles.scss"
 import Image from "next/image";
 import ScheduleACallButton from "@/app/components/ScheduleACallButton";

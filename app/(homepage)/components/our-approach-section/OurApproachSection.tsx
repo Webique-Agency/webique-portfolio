@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentSection from "@/app/components/content-section/ContentSection";
 import "./OurApproachSection.styles.scss";
-import {Code, Figma, NotebookPen, Paintbrush, Paintbrush2, Rocket, TestTube2, Webcam} from "lucide-react";
+import {Code, Figma, NotebookPen, Rocket, TestTube2, Webcam} from "lucide-react";
 
 export default function OurApproachSection() {
 	return (
