@@ -1,5 +1,15 @@
 import React from 'react';
-import {CircleDollarSign, Headset, LayoutPanelTop, MonitorCog, MonitorSmartphone, Timer} from "lucide-react";
+import {
+    BookOpen,
+    CircleDollarSign, CircleHelp, Cpu,
+    Figma, FileStack,
+    Headset, Hexagon,
+    LayoutPanelTop,
+    MonitorCog,
+    MonitorSmartphone,
+    Package, PaintRoller, Scaling, Shapes, Shield,
+    Timer, Webhook
+} from "lucide-react";
 import "./FaqSection.styles.scss";
 
 const websiteDevelopment = [
@@ -35,14 +45,88 @@ const websiteDevelopment = [
     },
 ]
 
+const websiteDesign = [
+    {
+        question: "What is included in your website design services?",
+        answer: "Our design services include wireframing, UI/UX design, prototyping, and full design implementation with a focus on usability and aesthetics.",
+        icon: <Package/>
+    },
+    {
+        question: "Will I receive the design files after the project is completed?",
+        answer: "Yes, we provide all necessary design assets, including Figma files, along with exported images and icons.",
+        icon: <Figma/>
+    },
+    {
+        question: "Can I request revisions during the design process?",
+        answer: "Yes, all our websites are fully responsive and optimized for mobile, tablet, and desktop use.",
+        icon: <FileStack/>
+    },
+    {
+        question: "Can you redesign my existing website?",
+        answer: "Yes, we can redesign your current website if you don't like the current design",
+        icon: <PaintRoller/>
+    },
+    {
+        question: "Do you follow any specific design principles?",
+        answer: "We follow modern design trends, usability guidelines, and accessibility standards to create intuitive and visually appealing websites.",
+        icon: <BookOpen/>
+    },
+    {
+        question: "Do you offer branding and logo design as part of website design?",
+        answer: "Partially, currently we only offer logo creation.",
+        icon: <Hexagon/>
+    },
+]
 
-export default function FaqSection({service}: { service: string }) {
+const saasDevelopment = [
+    {
+        question: "What is SaaS development?",
+        answer: "SaaS (Software as a Service) development involves creating cloud-based applications that users can access via a web browser without needing installation.",
+        icon: <CircleHelp/>
+    },
+    {
+        question: "How secure are your SaaS applications?",
+        answer: "We implement enterprise-grade security measures, including encryption, authentication, and compliance with data protection regulations.",
+        icon: <Shield/>
+    },
+    {
+        question: "How scalable are your SaaS solutions?",
+        answer: "Our SaaS applications are built to scale, allowing businesses to grow without worrying about infrastructure limitations.",
+        icon: <Scaling/>
+    },
+    {
+        question: "What technologies do you use for SaaS development?",
+        answer: "We use modern tech stacks like NextJs, Angular, Node.js, Java, Python, and cloud platforms like AWS and Google Cloud.",
+        icon: <Cpu/>
+    },
+    {
+        question: "Do you provide API integrations?",
+        answer: "Yes, we can integrate third-party APIs or develop custom APIs to connect your SaaS platform with other services.",
+        icon: <Webhook/>
+    },
+    {
+        question: "Do you offer a free trial or demo version of SaaS products?",
+        answer: "Yes, we can implement free trial periods or demo versions to allow users to test the platform before committing to a subscription.",
+        icon: <Shapes/>
+    },
+]
+
+export default function FaqSection({service}: {
+    service: "websiteDevelopment" | "websiteDesign" | "saasDevelopment" | "uiUxDesign" | "seoOptimization"
+}) {
 
     let questionsForService: { question: string, answer: string, icon: React.ReactNode }[] = [];
 
     switch (service) {
         case "websiteDevelopment":
             questionsForService = websiteDevelopment;
+            break
+        case "websiteDesign":
+            questionsForService = websiteDesign;
+            break
+        case "saasDevelopment":
+            questionsForService = saasDevelopment;
+            break
     }
 
     return (

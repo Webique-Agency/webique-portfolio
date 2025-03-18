@@ -15,9 +15,9 @@ export default function Page() {
                    className="service-background" alt={"Grid"}/>
 
             <PricingCard price={2499}
-                         description={"Custom SaaS development designed for growth, security, and efficiency—turn your vision into a powerful digital product."}
                          icon={<Blocks/>}
                          iconDescription={"From idea to Product"}
+                         description={"Custom SaaS development designed for growth, security, and efficiency—turn your vision into a powerful digital product."}
                          includedServices={[
                              "Fully customized solution",
                              "UI/UX Design included",
@@ -28,7 +28,7 @@ export default function Page() {
                              "Unlimited scale potential"
                          ]}/>
 
-            <FaqSection service={"websiteDevelopment"}/>
+            <FaqSection service={"saasDevelopment"}/>
         </section>
     );
 }
