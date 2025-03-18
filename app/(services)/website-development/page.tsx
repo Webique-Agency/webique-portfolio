@@ -8,6 +8,7 @@ import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {Check, Info, Minus, Stars} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
+import FaqSection from "@/app/(services)/faq-section/FaqSection";
 
 function Page() {
 
@@ -68,34 +69,33 @@ function Page() {
                         <div className="plans-wrapper-grid">
                             {websiteDevPlans.map((plan, index) => (
                                 <React.Fragment key={index}>
-                                    <th>
-                                        <div
-                                            className={plan.mostPopular ? "plan-wrapper most-popular" : "plan-wrapper"}>
-                                            <div className="plan-header">
-                                                {plan.mostPopular && (
-                                                    <div className="popular-tag">
-                                                        <Stars/>
-                                                        <p>Most popular</p>
-                                                    </div>
-                                                )}
-                                                <h4>{plan.name}</h4>
-                                                <Image width={32} height={32}
-                                                       src={plan.icon}
-                                                       alt={plan.name}/>
-                                            </div>
-                                            <div className="price-wrapper">
-                                                <h2>{plan.priceMonthly}€</h2>
-                                                <h6>per month</h6>
-                                            </div>
-                                            <div className="plan-actions">
-                                                <p className="light-text">{plan.description}</p>
-                                                <Button className="w-full"
-                                                        variant={plan.mostPopular ? "default" : "inverted"}>
-                                                    Schedule a call
-                                                </Button>
-                                            </div>
+                                    <div
+                                        className={plan.mostPopular ? "plan-wrapper most-popular" : "plan-wrapper"}>
+                                        <div className="plan-header">
+                                            {plan.mostPopular && (
+                                                <div className="popular-tag">
+                                                    <Stars/>
+                                                    <p>Most popular</p>
+                                                </div>
+                                            )}
+                                            <h4>{plan.name}</h4>
+                                            <Image width={32} height={32}
+                                                   className="plan-icon"
+                                                   src={plan.icon}
+                                                   alt={plan.name}/>
                                         </div>
-                                    </th>
+                                        <div className="price-wrapper">
+                                            <h2>{plan.priceMonthly}€</h2>
+                                            <h6>per month</h6>
+                                        </div>
+                                        <div className="plan-actions">
+                                            <p className="light-text">{plan.description}</p>
+                                            <Button className="w-full"
+                                                    variant={plan.mostPopular ? "default" : "inverted"}>
+                                                Schedule a call
+                                            </Button>
+                                        </div>
+                                    </div>
                                 </React.Fragment>
                             ))}
                             {/*____________________________________*/}
@@ -204,35 +204,33 @@ function Page() {
                         <div className="plans-wrapper-grid">
                             {websiteDevPlans.map((plan, index) => (
                                 <React.Fragment key={index}>
-                                    <th>
-                                        <div
-                                            className={plan.mostPopular ? "plan-wrapper most-popular" : "plan-wrapper"}>
-                                            <div className="plan-header">
-                                                {plan.mostPopular && (
-                                                    <div className="popular-tag">
-                                                        <Stars/>
-                                                        <p>Most popular</p>
-                                                    </div>
-                                                )}
-                                                <h4>{plan.name}</h4>
-                                                <Image width={32} height={32}
-                                                       src={plan.icon}
-                                                       alt={plan.name}/>
-                                            </div>
-                                            <h6>{plan.priceAnnually}€ yearly</h6>
-                                            <div className="price-wrapper">
-                                                <h2>{plan.perMonthAnnually}€</h2>
-                                                <h6>per month</h6>
-                                            </div>
-                                            <div className="plan-actions">
-                                                <p className="light-text">{plan.description}</p>
-                                                <Button className="w-full"
-                                                        variant={plan.mostPopular ? "default" : "inverted"}>
-                                                    Schedule a call
-                                                </Button>
-                                            </div>
+                                    <div
+                                        className={plan.mostPopular ? "plan-wrapper most-popular" : "plan-wrapper"}>
+                                        <div className="plan-header">
+                                            {plan.mostPopular && (
+                                                <div className="popular-tag">
+                                                    <Stars/>
+                                                    <p>Most popular</p>
+                                                </div>
+                                            )}
+                                            <h4>{plan.name}</h4>
+                                            <Image width={32} height={32}
+                                                   src={plan.icon}
+                                                   alt={plan.name}/>
                                         </div>
-                                    </th>
+                                        <h6 className="light-text"><s>{plan.priceMonthly}€</s> per month</h6>
+                                        <div className="price-wrapper">
+                                            <h2>{plan.perMonthAnnually}€</h2>
+                                            <h6>per month</h6>
+                                        </div>
+                                        <div className="plan-actions">
+                                            <p className="light-text">{plan.description}</p>
+                                            <Button className="w-full"
+                                                    variant={plan.mostPopular ? "default" : "inverted"}>
+                                                Schedule a call
+                                            </Button>
+                                        </div>
+                                    </div>
                                 </React.Fragment>
                             ))}
                             {/*____________________________________*/}
@@ -339,6 +337,7 @@ function Page() {
                     </TabsContent>
                 </Tabs>
             </div>
+            <FaqSection service={"websiteDevelopment"}/>
         </section>
     );
 }

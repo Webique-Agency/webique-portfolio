@@ -1,0 +1,45 @@
+@use "../../common";
+
+.faq-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-block: 6rem;
+
+  .faq-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-column-gap: 5rem;
+    grid-row-gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1.5rem;
+    }
+
+    .question {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      .question-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.5rem;
+      }
+
+      .question-icon {
+        padding: 0.5rem;
+        border: 1px solid common.$shade;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
