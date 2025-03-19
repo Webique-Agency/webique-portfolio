@@ -1,10 +1,9 @@
-"use client";
-
 import React from 'react';
 import {Button} from "@/components/ui/button";
 import "./HeroSection.styles.scss"
 import Image from "next/image";
 import ScheduleACallButton from "@/app/components/ScheduleACallButton";
+import HeroAnimation from "@/app/(homepage)/components/hero-section/hero-animation/HeroAnimation";
 
 export default function HeroSection() {
     return (
@@ -27,7 +26,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="animation">
-                {/*<HeroAnimation/>*/}
+                <HeroAnimation/>
             </div>
         </section>
     );

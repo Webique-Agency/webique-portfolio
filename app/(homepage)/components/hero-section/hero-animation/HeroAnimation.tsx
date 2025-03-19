@@ -2,10 +2,11 @@
 
 import React from 'react';
 import heroAnimation from "./hero-animation.json";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function HeroAnimation() {
     return (
-        <Lottie animationData={heroAnimation} loop={true}></Lottie>
+        <DynamicLottie animationData={heroAnimation} loop={true}></DynamicLottie>
     );
 }
