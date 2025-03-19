@@ -201,7 +201,7 @@ export default function FaqSection({service}: {
 	service: "websiteDevelopment" | "websiteDesign" | "saasDevelopment" | "uiUxDesign" | "seoOptimization"
 }) {
 
-	const faqMap = new Map<string, {question: string, answer: string, icon: ReactNode}[]>();
+	const faqMap = new Map<string, { question: string, answer: string, icon: ReactNode }[]>();
 	faqMap.set("websiteDevelopment", websiteDevelopment);
 	faqMap.set("websiteDesign", websiteDesign);
 	faqMap.set("saasDevelopment", saasDevelopment);

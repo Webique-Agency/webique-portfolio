@@ -30,7 +30,12 @@
       justify-content: center;
 
       @media (max-width: 1024px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .plan-check {
+        justify-content: space-between;
       }
 
       .mobile-plan {
