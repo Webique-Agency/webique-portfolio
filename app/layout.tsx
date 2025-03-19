@@ -10,6 +10,11 @@ const geistSans = Geist({
 	subsets: ["latin"],
 });
 
+const bricolagueGrotesqueSans = Geist({
+	variable: "--font-bricolage-grotesque-sans",
+	subsets: ["latin"],
+});
+
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
@@ -25,7 +30,7 @@ export default function RootLayout({children}: Readonly<{
 }>) {
 	return (
 		<html lang="en">
-		<body>
+		<body className={`${geistSans.variable} ${bricolagueGrotesqueSans.variable} ${geistMono.variable} antialiased`}>
 		<LenisScrollProvider>
 			<main>
 				<Navbar/>
