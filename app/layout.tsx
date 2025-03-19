@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
+import {Bricolage_Grotesque, Geist, Geist_Mono} from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/app/components/Navbar";
 import LenisScrollProvider from "@/app/providers/Lenis";
@@ -10,7 +10,7 @@ const geistSans = Geist({
 	subsets: ["latin"],
 });
 
-const bricolagueGrotesqueSans = Geist({
+const bricolagueGrotesqueSans = Bricolage_Grotesque({
 	variable: "--font-bricolage-grotesque-sans",
 	subsets: ["latin"],
 });
