@@ -33,10 +33,11 @@ export default function Navbar() {
 
     return (
         <nav
-            className="w-full flex items-center justify-between py-4 top-4 z-2 sticky bg-[#FFFFFF] border-1 rounded-xl px-4">
-            <div className="lg:logo-wrapper w-7/12 max-[1025px]:w-full">
+            className="w-full flex items-center justify-between py-4 top-4 z-50 sticky bg-[#FFFFFF] border-1 rounded-xl px-4">
+            <div className="lg:logo-wrapper w-7/12">
                 <Link href={"/"}>
-                    <Image width={250} height={250} className="object-fit w-3/12" src="logo.png" alt="Webique Logo"/>
+                    <Image width={250} height={250} className="object-fit w-3/12 max-[1025px]:w-6/12" src="logo.png"
+                           alt="Webique Logo"/>
                 </Link>
             </div>
 
@@ -55,7 +56,10 @@ export default function Navbar() {
                     <SheetTrigger><Menu/></SheetTrigger>
                     <SheetContent side={"top"}>
                         <SheetTitle>
-                            <span className={'p-6'}>Webique Agency</span>
+                            <Link href={"/"}>
+                                <Image width={250} height={250} className="object-fit w-6/12" src="logo.png"
+                                       alt="Webique Logo"/>
+                            </Link>
                         </SheetTitle>
                         <div className="flex flex-col gap-8 items-start justify-center p-6">
                             <Link href={"/#services"} className="inline-flex items-center gap-1">

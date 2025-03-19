@@ -106,6 +106,10 @@ button, h6 {
 
   h3 {
     white-space: pre;
+
+    @media (max-width: 768px) {
+      white-space: break-spaces;
+    }
   }
 
   .line {
@@ -132,6 +136,10 @@ button, h6 {
     width: 100%;
     top: 10%;
     z-index: 0;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
