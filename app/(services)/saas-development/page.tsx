@@ -15,6 +15,7 @@ export default function Page() {
                    className="service-background" alt={"Grid"}/>
 
             <PricingCard price={2499}
+                         service={"saasDevelopment"}
                          icon={<Blocks/>}
                          iconDescription={"From idea to Product"}
                          description={"Custom SaaS development designed for growth, security, and efficiency—turn your vision into a powerful digital product."}

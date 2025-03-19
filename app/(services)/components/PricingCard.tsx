@@ -2,12 +2,13 @@ import React, {ReactNode} from 'react';
 import {Check} from "lucide-react";
 import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 
-export default function PricingCard({price, description, icon, iconDescription, includedServices}: {
+export default function PricingCard({price, description, icon, iconDescription, includedServices, service}: {
     price: number,
     description: string,
     icon: ReactNode,
     iconDescription: string,
     includedServices: string[],
+    service: "websiteDevelopment" | "websiteDesign" | "saasDevelopment" | "uiUxDesign" | "seoOptimization"
 }) {
     return (
         <div className="flex items-center justify-center py-12">
@@ -18,7 +19,7 @@ export default function PricingCard({price, description, icon, iconDescription, 
                 </div>
                 <h2>{price}€+</h2>
                 <p className="light-text">{description}</p>
-                <ScheduleACallButton variant={"default"} withIcon={true}/>
+                <ScheduleACallButton service={service} variant={"default"} withIcon={true}/>
                 <hr/>
                 <div className="flex flex-col items-start justify-start gap-2">
                     {includedServices.map((serviceInList, index) => (

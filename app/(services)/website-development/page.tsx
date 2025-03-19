@@ -9,6 +9,8 @@ import {Button} from "@/components/ui/button";
 import {Check, Info, Minus, Stars} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 import FaqSection from "@/app/(services)/components/faq-section/FaqSection";
+import Link from "next/link";
+import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 
 function Page() {
 
@@ -90,78 +92,96 @@ function Page() {
                                         </div>
                                         <div className="plan-actions">
                                             <p className="light-text">{plan.description}</p>
-                                            <Button className="w-full"
-                                                    variant={plan.mostPopular ? "default" : "inverted"}>
-                                                Schedule a call
-                                            </Button>
+                                            <ScheduleACallButton className="w-full" withIcon={false}
+                                                                 service={"websiteDevelopment"}
+                                                                 variant={plan.mostPopular ? "default" : "inverted"}>
+                                            </ScheduleACallButton>
                                         </div>
                                     </div>
                                 </React.Fragment>
                             ))}
                             {/*____________________________________*/}
                             <h6 className="separator">Professional one-page website</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium</span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Customized design</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Mobile-first optimization</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Additional pages</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 1 page
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 3+ pages
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Domain and hosting</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 1 year
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 Lifetime
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Newsletter mailing system</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
@@ -177,24 +197,30 @@ function Page() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 1 feature
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">SEO Optimization</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 Basic SEO
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 Basic + Technical SEO
                             </p>
                             {/*____________________________________*/}
@@ -225,78 +251,96 @@ function Page() {
                                         </div>
                                         <div className="plan-actions">
                                             <p className="light-text">{plan.description}</p>
-                                            <Button className="w-full"
-                                                    variant={plan.mostPopular ? "default" : "inverted"}>
-                                                Schedule a call
-                                            </Button>
+                                            <ScheduleACallButton className="w-full" withIcon={false}
+                                                                 service={"websiteDevelopment"}
+                                                                 variant={plan.mostPopular ? "default" : "inverted"}>
+                                            </ScheduleACallButton>
                                         </div>
                                     </div>
                                 </React.Fragment>
                             ))}
                             {/*____________________________________*/}
                             <h6 className="separator">Professional one-page website</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Customized design</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Mobile-first optimization</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Additional pages</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 1 page
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 3+ pages
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Domain and hosting</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 1 year
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 Lifetime
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">Newsletter mailing system</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Check className="primary-color"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 <Check className="primary-color"/>
                             </p>
                             {/*____________________________________*/}
@@ -312,24 +356,30 @@ function Page() {
                                     </Tooltip>
                                 </TooltipProvider>
                             </h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 1 feature
                             </p>
                             {/*____________________________________*/}
                             <h6 className="separator">SEO Optimization</h6>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Basic: </span>
                                 <Minus className="light-text"/>
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Standard: </span>
                                 Basic SEO
                             </p>
-                            <p className="flex items-center justify-center w-full">
+                            <p className="flex items-center justify-center w-full gap-4">
+                                <span className="mobile-plan">Premium: </span>
                                 Basic + Technical SEO
                             </p>
                             {/*____________________________________*/}

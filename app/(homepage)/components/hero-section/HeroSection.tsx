@@ -2,8 +2,8 @@ import React from 'react';
 import {Button} from "@/components/ui/button";
 import "./HeroSection.styles.scss"
 import Image from "next/image";
-import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 import HeroAnimation from "@/app/(homepage)/components/hero-section/hero-animation/HeroAnimation";
+import ChooseServiceDialog from "@/app/components/choose-service-dialog/ChooseServiceDialog";
 
 export default function HeroSection() {
     return (
@@ -18,7 +18,7 @@ export default function HeroSection() {
                     <h6 className="description">We ensure that your ideas don’t just remain concepts but evolve into
                         fully functional and impactful solutions.</h6>
                     <div className="buttons-wrapper">
-                        <ScheduleACallButton variant={"default"} withIcon={true}/>
+                        <ChooseServiceDialog variant={"default"} />
                         <Button variant={"outline"}>
                             Learn more
                         </Button>

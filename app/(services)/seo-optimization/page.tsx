@@ -16,6 +16,7 @@ export default function Page() {
 
             <div className="pricing-wrapper">
                 <PricingCard price={499}
+                             service={"seoOptimization"}
                              icon={<View/>}
                              iconDescription={"Optimized for Maximum Visibility"}
                              description={"Powerful SEO strategies designed to improve visibility, increase traffic, and enhance online performance."}

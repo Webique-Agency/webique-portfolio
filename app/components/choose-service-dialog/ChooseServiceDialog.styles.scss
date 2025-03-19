@@ -1,0 +1,37 @@
+@use "../../common";
+
+.services-wrapper-dialog {
+  display: grid;
+  outline: 1px solid common.$shade;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 150ms ease-in-out;
+  gap: 1px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+
+  .service-card {
+    padding: 2rem 1rem;
+    outline: 1px solid common.$shade;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: all 150ms ease-in-out;
+
+    .service-text {
+      height: min-content;
+    }
+
+    &:hover {
+      background: common.$primary-color;
+      transition: all 150ms ease-in-out;
+      cursor: pointer;
+
+      * {
+        color: common.$background;
+      }
+    }
+  }
+}

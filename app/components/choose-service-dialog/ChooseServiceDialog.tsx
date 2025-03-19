@@ -1,0 +1,74 @@
+import React from 'react';
+import {
+    Dialog,
+    DialogClose,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger
+} from "@/components/ui/dialog";
+import {Button} from "@/components/ui/button";
+import {ArrowUpRight} from "lucide-react";
+import Link from "next/link";
+import "./ChooseServiceDialog.styles.scss";
+
+export default function ChooseServiceDialog({variant}: {
+    variant: "link" | "default" | "destructive" | "outline" | "secondary" | "ghost" | "inverted",
+}) {
+
+    const services = [
+        {
+            service: "Website Development",
+            link: "https://cal.com/webique/website-development",
+        },
+        {
+            service: "Website Design",
+            link: "https://cal.com/webique/website-design",
+        },
+        {
+            service: "SaaS Development",
+            link: "https://cal.com/webique/saas-development",
+        },
+        {
+            service: "UI/UX Design",
+            link: "https://cal.com/webique/ui-ux-design",
+        },
+        {
+            service: "SEO Optimization",
+            link: "https://cal.com/webique/seo-optimization",
+        },
+    ]
+
+    return (
+        <Dialog>
+            <DialogTrigger asChild>
+                <Button variant={variant}>
+                    Schedule a Call
+                    <ArrowUpRight/>
+                </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                    <DialogTitle>Choose a service</DialogTitle>
+                    <DialogDescription>
+                        Schedule a call for a service that fits your needs.
+                    </DialogDescription>
+                </DialogHeader>
+                <div className="services-wrapper-dialog">
+                    {services.map((service, index) => (
+                        <Link key={index}
+                              className={`service-card div${index + 1}`}
+                              href={service.link}
+                              target={"_blank"}>
+                            <h4 className="service-number primary-color">
+                                0{index + 1}
+                            </h4>
+                            <h4><span className="primary-color"></span> {service.service}</h4>
+                        </Link>
+                    ))}
+                </div>
+            </DialogContent>
+        </Dialog>);
+}

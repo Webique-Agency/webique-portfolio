@@ -14,6 +14,7 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 import {Menu} from "lucide-react";
+import ChooseServiceDialog from "@/app/components/choose-service-dialog/ChooseServiceDialog";
 
 export default function Navbar() {
 
@@ -48,8 +49,7 @@ export default function Navbar() {
                 <Link href={"/"}>Projects</Link>
                 <Link href={"/"}>About</Link>
 
-                <ScheduleACallButton variant={scrollYPage > 500 ? "default" : "ghost"}
-                                     withIcon={true}></ScheduleACallButton>
+                <ChooseServiceDialog variant={scrollYPage > 500 ? "default" : "ghost"} />
             </div>
             <div className="hamburger-wrapper lg:hidden max-[1025px]:block">
                 <Sheet>
@@ -69,6 +69,7 @@ export default function Navbar() {
                             <Link href={"/"}>About</Link>
 
                             <ScheduleACallButton variant={"default"}
+                                                 service={"any"}
                                                  className={"w-full"}
                                                  withIcon={true}></ScheduleACallButton>
                         </div>

@@ -16,6 +16,7 @@ export default function Page() {
 
             <div className="pricing-wrapper">
                 <PricingCard price={2999}
+                             service={"uiUxDesign"}
                              icon={<Figma/>}
                              iconDescription={"Designed in Figma"}
                              description={"Stunning, intuitive, and high-performing UI/UX design tailored for seamless user experiences."}

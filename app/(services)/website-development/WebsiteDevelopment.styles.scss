@@ -29,6 +29,18 @@
       align-content: center;
       justify-content: center;
 
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
+
+      .mobile-plan {
+        display: none;
+
+        @media (max-width: 1024px) {
+          display: block;
+        }
+      }
+
       .separator {
         display: inline-flex;
         align-items: center;

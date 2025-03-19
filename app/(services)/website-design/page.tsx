@@ -16,6 +16,7 @@ export default function Page() {
 
             <div className="pricing-wrapper">
                 <PricingCard price={599}
+                             service={"websiteDesign"}
                              icon={<Figma/>}
                              iconDescription={"Designed in Figma"}
                              description={"Premium web design solutions tailored to your brand, ensuring a stunning, high-performing online presence."}

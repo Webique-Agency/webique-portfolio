@@ -90,6 +90,10 @@ button, h6 {
 
 .generic-section-wrapper {
   padding-bottom: 8rem;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 4rem;
+  }
 }
 
 .generic-section-header {
