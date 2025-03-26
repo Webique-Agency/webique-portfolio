@@ -5,10 +5,11 @@ import ServicesSection from "@/app/(homepage)/components/services-section/Servic
 import ProjectsSection from "@/app/(homepage)/components/projects-section/ProjectsSection";
 import WhyWeStandOutSection from "@/app/(homepage)/components/why-we-stand-out-section/WhyWeStandOutSection";
 import OurApproachSection from "@/app/(homepage)/components/our-approach-section/OurApproachSection";
+import PageTransition from "@/app/components/page-transitions/PageTransition";
 
 export default function Home() {
 	return (
-		<div>
+		<PageTransition>
 			<HeroSection/>
 			<SuccessSection/>
 			<TestimonialSection/>
@@ -16,6 +17,6 @@ export default function Home() {
 			<ServicesSection/>
 			<WhyWeStandOutSection/>
 			<OurApproachSection/>
-		</div>
+		</PageTransition>
 	);
 }

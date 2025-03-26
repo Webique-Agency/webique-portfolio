@@ -20,7 +20,7 @@ export default function HeroSection() {
 					<div className="buttons-wrapper">
 						<ChooseServiceDialog variant={"default"}/>
 						<Button variant={"outline"}>
-							Learn more
+							Pricing
 						</Button>
 					</div>
 				</div>

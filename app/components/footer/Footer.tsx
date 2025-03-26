@@ -12,8 +12,8 @@ export default function Footer() {
 
 					<div className="navbar-links">
 						<Link href={"/"}>Home</Link>
-						<Link href={"#services"}>Services</Link>
-						<Link href={"/"}>Projects</Link>
+						<Link href={"/#services"}>Services</Link>
+						<Link href={"/#projects"}>Projects</Link>
 					</div>
 				</div>
 
@@ -23,7 +23,6 @@ export default function Footer() {
 					<h6>Feel free to reach out for any questions: <Link
 						href={"mailto:webique.contact@proton.me"}>webique.contact@proton.me</Link></h6>
 				</div>
-				{/*<Image width={250} height={250} src={"/footer-logo.png"} alt={"Webique logo footer"} className="footer-logo"/>*/}
 			</div>
 		</footer>
 	);

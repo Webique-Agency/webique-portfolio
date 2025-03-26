@@ -43,7 +43,7 @@ export default function Navbar() {
             <Link href={"/#services"} className="inline-flex items-center gap-1">
               Services
             </Link>
-            <Link href={"/"}>Projects</Link>
+            <Link href={"/#projects"}>Projects</Link>
             <Link href={"/"}>About</Link>
           </motion.div>
 
@@ -75,7 +75,7 @@ export default function Navbar() {
                 <Link href={"/#services"} className="inline-flex items-center gap-1">
                   Services
                 </Link>
-                <Link href={"/"}>Projects</Link>
+                <Link href={"/#projects"}>Projects</Link>
                 <Link href={"/"}>About</Link>
 
                 <ChooseServiceDialog variant={"default"} className={"w-full"}/>

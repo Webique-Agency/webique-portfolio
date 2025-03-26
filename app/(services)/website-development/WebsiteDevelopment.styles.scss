@@ -35,7 +35,11 @@
       }
 
       .plan-check {
-        justify-content: space-between;
+        justify-content: center;
+
+        @media (max-width: 1024px) {
+          justify-content: space-between;
+        }
       }
 
       .mobile-plan {
@@ -112,13 +116,6 @@
           justify-content: space-between;
           width: 100%;
           position: relative;
-
-          @media (max-width: 1024px) {
-
-            .plan-icon {
-              display: none;
-            }
-          }
         }
 
         .strikethrough {
@@ -131,11 +128,6 @@
           justify-content: flex-start;
           gap: 1rem;
           margin-top: -0.5rem;
-
-          @media (max-width: 1024px) {
-            flex-direction: column;
-            gap: 0;
-          }
         }
 
         .plan-actions {

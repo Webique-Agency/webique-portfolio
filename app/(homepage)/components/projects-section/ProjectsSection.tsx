@@ -7,7 +7,7 @@ import "./ProjectsSection.styles.scss"
 
 export default function ProjectsSection() {
 	return (
-		<ContentSection title={"FEATURED PROJECTS"}>
+		<ContentSection title={"FEATURED PROJECTS"} id={"projects"}>
 			<div className="projects-wrapper">
 				{projectList.map((project, projectIndex) => (
 					<Link href={project.link} target={"_blank"} key={projectIndex} className="project-card">
