@@ -39,7 +39,7 @@ export default function Navbar() {
         </div>
 
         <div className="lg:inline-flex gap-8 items-center max-[1025px]:hidden">
-          <motion.div layout className="inline-flex gap-8 items-center">
+          <motion.div className="inline-flex gap-8 items-center">
             <Link href={"/#services"} className="inline-flex items-center gap-1">
               Services
             </Link>
