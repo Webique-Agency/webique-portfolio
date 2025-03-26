@@ -12,9 +12,9 @@ export default function Home() {
 		<PageTransition>
 			<HeroSection/>
 			<SuccessSection/>
-			<TestimonialSection/>
-			<ProjectsSection/>
 			<ServicesSection/>
+			<ProjectsSection/>
+			<TestimonialSection/>
 			<WhyWeStandOutSection/>
 			<OurApproachSection/>
 		</PageTransition>
