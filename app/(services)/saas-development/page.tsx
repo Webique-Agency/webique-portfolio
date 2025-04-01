@@ -4,7 +4,6 @@ import Image from "next/image";
 import PricingCard from "@/app/(services)/components/PricingCard";
 import {Blocks} from "lucide-react";
 import FaqSection from "@/app/(services)/components/faq-section/FaqSection";
-import Inner from "@/app/components/page-transitions/Inner";
 import PageTransition from "@/app/components/page-transitions/PageTransition";
 
 export default function Page() {
@@ -20,7 +19,7 @@ export default function Page() {
           <PricingCard price={2499}
                        service={"saasDevelopment"}
                        icon={<Blocks/>}
-                       iconDescription={"From idea to Product"}
+                       iconDescription={"From Idea to Product"}
                        description={"Custom SaaS development designed for growth, security, and efficiency—turn your vision into a powerful digital product."}
                        includedServices={[
                          "Fully customized solution",
