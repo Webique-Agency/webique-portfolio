@@ -31,6 +31,7 @@ import {
 	WrapText
 } from "lucide-react";
 import "./FaqSection.styles.scss";
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from '@/components/ui/accordion';
 
 const websiteDevelopment = [
 	{
@@ -213,15 +214,19 @@ export default function FaqSection({service}: {
 			<h3>Frequently Asked Questions</h3>
 			<div className="faq-wrapper">
 				{faqMap.get(service).map((faq, index) => (
-					<div key={index} className="question">
-						<div className="question-icon">
-							{faq.icon}
-						</div>
-						<div className="question-text">
-							<h6>{faq.question}</h6>
-							<p className="light-text">{faq.answer}</p>
-						</div>
-					</div>
+					<Accordion type="single" collapsible key={index} className="border-1 p-4 w-full rounded-2xl">
+						<AccordionItem value="item-1">
+							<AccordionTrigger>
+								<h6 className="inline-flex flex-row items-center gap-4">
+									{faq.icon}
+									{faq.question}
+								</h6>
+							</AccordionTrigger>
+							<AccordionContent>
+								<p className="light-text">{faq.answer}</p>
+							</AccordionContent>
+						</AccordionItem>
+					</Accordion>
 				))}
 			</div>
 		</section>

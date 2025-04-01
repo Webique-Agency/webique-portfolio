@@ -32,7 +32,7 @@ const services = [
   {
     service: "Website Development",
     path: "website-development",
-    price: null,
+    price: 99,
     description: "Bring your ideas to life with custom-built websites designed for performance and scalability."
   },
 ]

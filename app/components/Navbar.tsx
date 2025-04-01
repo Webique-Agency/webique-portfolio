@@ -33,7 +33,7 @@ export default function Navbar() {
           className="w-full flex items-center justify-between py-4 top-4 z-50 sticky bg-[#FFFFFF] border-1 rounded-xl px-4">
         <div className="lg:logo-wrapper w-7/12">
           <Link href={"/"}>
-            <Image width={250} height={250} className="object-fit w-3/12 max-[1025px]:w-6/12" src="logo.png"
+            <Image width={250} height={250} className="object-fit w-2/12 max-[1025px]:w-6/12" src="logo.png"
                    alt="Webique Logo"/>
           </Link>
         </div>
