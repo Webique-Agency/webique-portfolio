@@ -1,11 +1,16 @@
 import type {Metadata} from "next";
-import {Bricolage_Grotesque, Geist, Geist_Mono} from "next/font/google";
+import {Bricolage_Grotesque, Geist, Geist_Mono, Host_Grotesk} from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const hostGroteskSans = Host_Grotesk({
+  variable: "--font-host-grotesk-sans",
   subsets: ["latin"],
 });
 
@@ -30,7 +35,7 @@ export default function RootLayout({children}: Readonly<{
 
   return (
       <html lang="en">
-      <body className={`${geistSans.variable} ${bricolagueGrotesqueSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
       <main>
         <Navbar/>
         {children}
