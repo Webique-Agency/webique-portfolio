@@ -2,9 +2,7 @@ import type {Metadata} from "next";
 import {Bricolage_Grotesque, Geist, Geist_Mono} from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/app/components/Navbar";
-import LenisScrollProvider from "@/app/providers/Lenis";
 import Footer from "@/app/components/footer/Footer";
-import PageTransition from "@/app/components/page-transitions/PageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,13 +31,11 @@ export default function RootLayout({children}: Readonly<{
   return (
       <html lang="en">
       <body className={`${geistSans.variable} ${bricolagueGrotesqueSans.variable} ${geistMono.variable} antialiased`}>
-      <LenisScrollProvider>
-        <main>
-          <Navbar/>
-          {children}
-        </main>
-        <Footer/>
-      </LenisScrollProvider>
+      <main>
+        <Navbar/>
+        {children}
+      </main>
+      <Footer/>
       </body>
       </html>
   );

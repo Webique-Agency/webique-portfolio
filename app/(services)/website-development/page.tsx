@@ -5,10 +5,11 @@ import ServiceHeader from "@/app/(services)/components/service-header/ServiceHea
 import "./WebsiteDevelopment.styles.scss";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
 import Image from "next/image";
-import {Check, Minus, Stars} from "lucide-react";
+import {Check, Info, Minus, Stars} from "lucide-react";
 import FaqSection from "@/app/(services)/components/faq-section/FaqSection";
 import ScheduleACallButton from "@/app/components/ScheduleACallButton";
 import PageTransition from "@/app/components/page-transitions/PageTransition";
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 function Page() {
 
@@ -204,7 +205,20 @@ function Page() {
 													<div key={index} className={"inline-flex gap-2 items-center justify-start"}>
 														{serviceInList.included ? <Check className="primary-color"/> :
 															<Minus className="light-text"/>}
-														<p>{serviceInList.name}</p>
+														{serviceInList.name == 'Custom features' ?
+																<TooltipProvider>
+																	<Tooltip>
+																		<TooltipTrigger>
+																			<p>{serviceInList.name}</p>
+																		</TooltipTrigger>
+																		<TooltipContent>
+																			<p>e.g: Reservation, order placement</p>
+																		</TooltipContent>
+																	</Tooltip>
+																</TooltipProvider>
+																:
+																<p>{serviceInList.name}</p>
+														}
 													</div>
 												))}
 											</div>
@@ -249,7 +263,20 @@ function Page() {
 													<div key={index} className={"inline-flex gap-2 items-center justify-start"}>
 														{serviceInList.included ? <Check className="primary-color"/> :
 															<Minus className="light-text"/>}
-														<p>{serviceInList.name}</p>
+                            {serviceInList.name == 'Custom features' ?
+                                <TooltipProvider>
+                                  <Tooltip>
+                                    <TooltipTrigger>
+                                      <p>{serviceInList.name}</p>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                      <p>e.g: Reservation, order placement</p>
+                                    </TooltipContent>
+                                  </Tooltip>
+                                </TooltipProvider>
+                                :
+                                <p>{serviceInList.name}</p>
+                            }
 													</div>
 												))}
 											</div>
