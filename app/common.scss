@@ -15,6 +15,7 @@ html, body {
   color: $text-color;
   background: $background;
   scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
 }
 
 main {
