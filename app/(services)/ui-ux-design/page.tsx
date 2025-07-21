@@ -17,7 +17,7 @@ export default function Page() {
                  className="service-background" alt={"Grid"}/>
 
           <div className="pricing-wrapper">
-            <PricingCard price={2999}
+            <PricingCard price={3999}
                          service={"uiUxDesign"}
                          icon={<Figma/>}
                          iconDescription={"Designed in Figma"}

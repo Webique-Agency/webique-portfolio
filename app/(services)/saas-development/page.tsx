@@ -16,7 +16,7 @@ export default function Page() {
           <Image width={250} height={250} src={"/service-assets/saas-development.png"}
                  className="service-background" alt={"Grid"}/>
 
-          <PricingCard price={2499}
+          <PricingCard price={4999}
                        service={"saasDevelopment"}
                        icon={<Blocks/>}
                        iconDescription={"From Idea to Product"}

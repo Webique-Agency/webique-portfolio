@@ -6,21 +6,21 @@ import {ArrowUpRight} from "lucide-react";
 
 const services = [
   {
-    service: "UI/UX Design",
-    path: "ui-ux-design",
-    price: 2999,
-    description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
-  },
-  {
     service: "SaaS Development",
     path: "saas-development",
-    price: 2499,
+    price: 4999,
     description: "Transform your operations with innovative SaaS platforms tailored to your business growth."
+  },
+  {
+    service: "UI/UX Design",
+    path: "ui-ux-design",
+    price: 3999,
+    description: "Delight your users with intuitive interfaces and experiences that leave a lasting impression."
   },
   {
     service: "Website Design",
     path: "website-design",
-    price: 599,
+    price: 1299,
     description: "Engage your audience with stunning designs crafted for seamless navigation and visual impact."
   },
   {
@@ -32,7 +32,7 @@ const services = [
   {
     service: "Website Development",
     path: "website-development",
-    price: 99,
+    price: 249,
     description: "Bring your ideas to life with custom-built websites designed for performance and scalability."
   },
 ]

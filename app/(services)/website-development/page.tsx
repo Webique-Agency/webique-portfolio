@@ -18,9 +18,9 @@ function Page() {
 	const websiteDevPlans = [
 		{
 			name: "Basic",
-			priceMonthly: 99,
-			priceAnnually: 960,
-			perMonthAnnually: 80,
+			priceMonthly: 249,
+			priceAnnually: 2390,
+			perMonthAnnually: 199,
 			description: "The ideal solution that empowers your brand to stand out in today's competitive digital landscape.",
 			mostPopular: false,
 			icon: "/service-assets/website-development/basic-plan-icon.png",
@@ -61,9 +61,9 @@ function Page() {
 		},
 		{
 			name: "Standard",
-			priceMonthly: 149,
-			priceAnnually: 1440,
-			perMonthAnnually: 120,
+			priceMonthly: 499,
+			priceAnnually: 4790,
+			perMonthAnnually: 399,
 			description: "Enhanced online presence with a custom page included",
 			mostPopular: true,
 			icon: "/service-assets/website-development/standard-plan-icon.png",
@@ -104,9 +104,9 @@ function Page() {
 		},
 		{
 			name: "Premium",
-			priceMonthly: 199,
-			priceAnnually: 1920,
-			perMonthAnnually: 160,
+			priceMonthly: 999,
+			priceAnnually: 9590,
+			perMonthAnnually: 799,
 			description: "Complete online business solution with enhanced features",
 			mostPopular: false,
 			icon: "/service-assets/website-development/premium-plan-icon.png",
