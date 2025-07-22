@@ -1,10 +1,11 @@
 [
   {
-    "name": "Miloš Radd",
-    "splashImage": "/project-images/milos-radd.png",
-    "link": "https://milos-radd.com/",
+    "name": "iMET",
+    "splashImage": "/project-images/imet.png",
+    "link": "https://imet.metropolitan.ac.rs/login/",
     "services": [
-      "Website Development"
+      "SaaS Development",
+      "UI/UX Design"
     ]
   },
   {
@@ -18,12 +19,21 @@
     ]
   },
   {
-    "name": "iMET",
-    "splashImage": "/project-images/imet.png",
-    "link": "https://imet.metropolitan.ac.rs/login/",
+    "name": "Miloš Radd",
+    "splashImage": "/project-images/milos-radd.png",
+    "link": "https://milos-radd.com/",
     "services": [
-      "SaaS Development",
-      "UI/UX Design"
+      "Website Development"
+    ]
+  },
+  {
+    "name": "Škola Plus",
+    "splashImage": "/project-images/skola-plus.png",
+    "link": "https://skolaplus.edu.rs/",
+    "services": [
+      "Website Development",
+      "Website Design",
+      "SEO Optimization"
     ]
   },
   {
@@ -33,6 +43,16 @@
     "services": [
       "Website Development",
       "UI/UX Design",
+      "SEO Optimization"
+    ]
+  },
+  {
+    "name": "Peasy",
+    "splashImage": "/project-images/peasy.png",
+    "link": "https://www.figma.com/proto/i2NAmntdUsuxuPcRjP5i8x/Peasy?page-id=0%3A1&node-id=1-6&viewport=156%2C264%2C0.16&t=S1ONTZCVPUSgpQwC-1&scaling=min-zoom&content-scaling=fixed",
+    "services": [
+      "Website Development",
+      "Website Design",
       "SEO Optimization"
     ]
   }
