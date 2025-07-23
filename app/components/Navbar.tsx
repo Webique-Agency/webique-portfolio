@@ -66,7 +66,7 @@ export default function Navbar() {
             <SheetContent side={"top"}>
               <SheetTitle>
                 <Link href={"/"}>
-                  <Image width={250} height={250} className="object-fit w-6/12" src="logo.png"
+                  <Image width={250} height={250} className="object-fit w-6/12" src="logo-dark.png"
                          alt="Webique Logo"/>
                 </Link>
               </SheetTitle>
