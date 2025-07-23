@@ -74,6 +74,10 @@
         justify-content: flex-start;
         gap: 0.5rem;
 
+        .lucide {
+          color: common.$primary-accent;
+        }
+
         h4 {
           display: inline-flex;
           flex-direction: row;
