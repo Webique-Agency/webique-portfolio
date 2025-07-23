@@ -49,6 +49,7 @@ export default function ServicesSection() {
                   {/*</h4>*/}
                   <div className="service-text">
                     <h4><span className="primary-color"></span> {service.service}</h4>
+                    <ArrowUpRight className={"max-[768px]:block min[649px]:hidden primary-accent"}/>
                   </div>
                 </div>
                 <div className="separator-line primary-accent"></div>
@@ -58,10 +59,6 @@ export default function ServicesSection() {
                         <h4>Starting from: <span className={"primary-color"}>{service.price}€+</span>
                           <ArrowUpRight/>
                         </h4>
-                        <div className={"see-details"}>
-                          <h6>See all details</h6>
-                          <ArrowUpRight/>
-                        </div>
                       </div>
                       :
                       <div className={'primary-color explore-plans'}>

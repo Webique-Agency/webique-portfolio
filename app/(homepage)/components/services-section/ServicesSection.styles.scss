@@ -29,6 +29,17 @@
 
     .service-text {
       height: min-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .lucide {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
     }
 
     .service-number-and-header {
@@ -75,7 +86,10 @@
         gap: 0.5rem;
 
         .lucide {
-          color: common.$primary-accent;
+          display: block;
+          @media (max-width: 768px) {
+            display: none;
+          }
         }
 
         h4 {
@@ -85,15 +99,6 @@
           justify-content: center;
           gap: 1rem;
           color: common.$light-text;
-        }
-
-        .see-details {
-          display: none;
-          align-items: center;
-          justify-content: space-between;
-          gap: 0.5rem;
-          color: common.$light-text;
-
         }
       }
 
