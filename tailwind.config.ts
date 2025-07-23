@@ -15,7 +15,7 @@ export default {
                 lightBorder: "#E8E8E8"
             },
             fontFamily: {
-                sans: ["var(--font-geist-sans)", "var(--font-bricolage-grotesque-sans)"],
+                sans: ["var(--font-geist-sans)", "var(--font-bricolage-grotesque-sans)", 'var(--font-inter-tight-sans)'],
             },
             fill: {
                 primary: "#F03A00",

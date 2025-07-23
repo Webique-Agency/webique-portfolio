@@ -12,7 +12,7 @@
   gap: 1px;
 
   .service-card {
-    padding: 2rem 1rem;
+    padding: 2rem;
     outline: 1px solid common.$shade;
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@
       flex: 1;
       height: 2px;
       scale: 1;
-      background: common.$primary-color;
+      background: common.$primary-accent;
       transition: all 150ms ease-in-out;
 
       @media (max-width: 1024px) {
@@ -80,15 +80,16 @@
           align-items: center;
           justify-content: center;
           gap: 1rem;
+          color: common.$light-text;
         }
 
         .see-details {
-          display: flex;
+          display: none;
           align-items: center;
           justify-content: space-between;
-          gap: 1rem;
+          gap: 0.5rem;
           color: common.$light-text;
-          width: 100%;
+
         }
       }
 

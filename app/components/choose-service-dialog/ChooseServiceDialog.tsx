@@ -61,10 +61,7 @@ export default function ChooseServiceDialog({variant, className}: {
 									className={`service-card div${index + 1}`}
 									href={service.link}
 									target={"_blank"}>
-							<h4 className="service-number primary-color">
-								0{index + 1}
-							</h4>
-							<h4><span className="primary-color"></span> {service.service}</h4>
+							<h6><span className="primary-color"></span> {service.service}</h6>
 						</Link>
 					))}
 				</div>

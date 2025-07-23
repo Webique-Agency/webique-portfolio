@@ -13,7 +13,7 @@ export default function Page() {
           <ServiceHeader serviceName={"SEO Optimization"}
                          serviceDescription={"Stand out with a high-quality, custom-built website designed to enhance user experience and grow your business."}/>
 
-          <Image width={250} height={250} src={"/service-assets/seo-optimization.png"}
+          <Image width={250} height={250} src={"/service-assets/seo-optimization-v2.png"}
                  className="service-background" alt={"Grid"}/>
 
           <div className="pricing-wrapper">

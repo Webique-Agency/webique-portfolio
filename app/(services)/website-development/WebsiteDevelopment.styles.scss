@@ -77,24 +77,24 @@
         z-index: 2;
 
         &.most-popular {
-          h4, h2, h6 {
-            color: common.$primary-color;
+          h4 {
+            color: common.$primary-accent;
           }
 
-          outline: 2px solid common.$primary-color;
+          outline: 1px solid common.$primary-accent;
 
           .popular-tag {
             position: absolute;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: common.$primary-color;
+            background: common.$primary-accent;
             border-radius: 2rem;
             padding: 0.25rem 0.75rem;
             top: -80%;
 
             * {
-              color: common.$background;
+              color: common.$text-color;
             }
 
             .lucide {
@@ -134,7 +134,7 @@
         .plan-actions {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
           width: 100%;
           gap: 1rem;

@@ -1,5 +1,13 @@
 import type {Metadata} from "next";
-import {Bricolage_Grotesque, Geist, Geist_Mono, Host_Grotesk} from "next/font/google";
+import {
+    Bricolage_Grotesque,
+    Geist,
+    Geist_Mono,
+    Host_Grotesk,
+    Inter_Tight,
+    Manrope,
+    Plus_Jakarta_Sans
+} from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/footer/Footer";
@@ -19,6 +27,11 @@ const bricolagueGrotesqueSans = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
+const interTightSans = Plus_Jakarta_Sans({
+    variable: "--font-inter-tight-sans",
+    subsets: ["latin"],
+});
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -35,7 +48,7 @@ export default function RootLayout({children}: Readonly<{
 
   return (
       <html lang="en">
-      <body className={`${geistSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${interTightSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
       <main>
         <Navbar/>
         {children}

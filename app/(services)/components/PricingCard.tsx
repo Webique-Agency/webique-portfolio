@@ -12,7 +12,7 @@ export default function PricingCard({price, description, icon, iconDescription, 
 }) {
     return (
         <div className="flex items-center justify-center py-12">
-            <div className="flex flex-col p-8 border-2 gap-4 border-[#ededed] rounded-xl max-w-xl bg-[#FFFFFF]">
+            <div className="flex flex-col p-8 border-2 gap-4 border-[#333333] rounded-xl max-w-xl bg-[#0a0a0a]">
                 <div className="inline-flex gap-1 light-text">
                     {icon}
                     <p>{iconDescription}</p>
@@ -24,7 +24,7 @@ export default function PricingCard({price, description, icon, iconDescription, 
                 <div className="flex flex-col items-start justify-start gap-2">
                     {includedServices.map((serviceInList, index) => (
                         <div key={index} className={"inline-flex gap-2 items-center justify-start"}>
-                            <Check className="primary-color"/>
+                            <Check className="primary-accent"/>
                             <p>{serviceInList}</p>
                         </div>
                     ))}

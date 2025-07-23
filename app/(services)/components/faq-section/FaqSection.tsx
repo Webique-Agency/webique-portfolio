@@ -214,7 +214,7 @@ export default function FaqSection({service}: {
 			<h3>Frequently Asked Questions</h3>
 			<div className="faq-wrapper">
 				{faqMap.get(service).map((faq, index) => (
-					<Accordion type="single" collapsible key={index} className="border-1 p-4 w-full rounded-2xl">
+					<Accordion type="single" collapsible key={index} className="border border-[#333333] p-4 w-full rounded-2xl">
 						<AccordionItem value="item-1">
 							<AccordionTrigger>
 								<h6 className="inline-flex flex-row items-center gap-4">

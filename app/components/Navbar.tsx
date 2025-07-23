@@ -30,10 +30,10 @@ export default function Navbar() {
 
   return (
       <nav
-          className="w-full flex items-center justify-between py-4 top-4 z-50 sticky bg-[#FFFFFF] border-1 rounded-xl px-4">
+          className="w-full flex items-center justify-between py-4 top-4 z-50 sticky bg-[#0a0a0ab0] backdrop-blur-xs border-1 border-[#333333] rounded-xl px-4">
         <div className="lg:logo-wrapper w-7/12">
           <Link href={"/"}>
-            <Image width={250} height={250} className="object-fit w-2/12 max-[1025px]:w-6/12" src="logo.png"
+            <Image width={250} height={250} className="object-fit w-[10rem] max-[1025px]:w-6/12 max-[500px]:w-10/12" src="logo-dark.png"
                    alt="Webique Logo"/>
           </Link>
         </div>
@@ -44,7 +44,6 @@ export default function Navbar() {
               Services
             </Link>
             <Link href={"/#projects"}>Projects</Link>
-            <Link href={"/"}>About</Link>
           </motion.div>
 
           <AnimatePresence initial={false}>

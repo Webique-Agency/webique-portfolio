@@ -22,13 +22,17 @@
     gap: 1rem;
     width: 100%;
 
+    p {
+      color: common.$light-text;
+    }
+
     .icon-wrapper {
       padding: 1rem;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background: lighten(common.$primary-color, 40);
+      background: lighten(common.$background, 10);
       border-radius: 0.5rem;
     }
   }

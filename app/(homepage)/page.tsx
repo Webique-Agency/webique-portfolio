@@ -8,15 +8,15 @@ import OurApproachSection from "@/app/(homepage)/components/our-approach-section
 import PageTransition from "@/app/components/page-transitions/PageTransition";
 
 export default function Home() {
-	return (
-		<PageTransition>
-			<HeroSection/>
-			<SuccessSection/>
-			<ServicesSection/>
-			<ProjectsSection/>
-			<TestimonialSection/>
-			<WhyWeStandOutSection/>
-			<OurApproachSection/>
-		</PageTransition>
-	);
+    return (
+        <PageTransition>
+            <HeroSection/>
+            <SuccessSection/>
+            <ServicesSection/>
+            <ProjectsSection/>
+            <TestimonialSection/>
+            <WhyWeStandOutSection/>
+            <OurApproachSection/>
+        </PageTransition>
+    );
 }

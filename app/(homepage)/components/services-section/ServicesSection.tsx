@@ -44,18 +44,20 @@ export default function ServicesSection() {
           {services.map((service, index) => (
               <Link key={index} className={`service-card div${index + 1}`} href={service.path}>
                 <div className="service-number-and-header">
-                  <h4 className="service-number primary-color">
-                    0{index + 1}
-                  </h4>
+                  {/*<h4 className="service-number primary-color">*/}
+                  {/*  0{index + 1}*/}
+                  {/*</h4>*/}
                   <div className="service-text">
                     <h4><span className="primary-color"></span> {service.service}</h4>
                   </div>
                 </div>
-                <div className="separator-line primary-color"></div>
+                <div className="separator-line primary-accent"></div>
                 <div className="service-pricing-wrapper">
                   {service.price ?
                       <div className={"start-pricing"}>
-                        <h4>Starting from: <span className={"primary-color"}>{service.price}€+</span></h4>
+                        <h4>Starting from: <span className={"primary-color"}>{service.price}€+</span>
+                          <ArrowUpRight/>
+                        </h4>
                         <div className={"see-details"}>
                           <h6>See all details</h6>
                           <ArrowUpRight/>

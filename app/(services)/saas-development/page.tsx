@@ -13,7 +13,7 @@ export default function Page() {
           <ServiceHeader serviceName={"SaaS Development"}
                          serviceDescription={"Custom SaaS development designed for growth, security, and efficiency—turn your vision into a powerful digital product."}/>
 
-          <Image width={250} height={250} src={"/service-assets/saas-development.png"}
+          <Image width={250} height={250} src={"/service-assets/saas-development-v2.png"}
                  className="service-background" alt={"Grid"}/>
 
           <PricingCard price={4999}
