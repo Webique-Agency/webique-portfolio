@@ -15,9 +15,10 @@ export default function HeroSection() {
                     <p>100+ satisfied clients</p>
                 </div>
                 <div className="text-content">
-                    <h1>Launch in <span className={"primary-accent"}>Weeks</span>, Lead for <span className={"primary-accent"}>Years</span>
+                    <h1>Launch in <span className={"primary-accent"}>Weeks</span>, Lead for <span
+                        className={"primary-accent"}>Years</span>
                     </h1>
-                    <h6 className="description">Scalable SaaS architecture, conversion-optimized design, and SEO strategies that generate 10x more qualified leads.</h6>
+                    <h6 className="description">Complete digital solutions that perform.</h6>
                     <div className="buttons-wrapper">
                         <ChooseServiceDialog variant={"default"}/>
                         <Link href={"#services"}>
