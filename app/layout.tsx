@@ -1,30 +1,14 @@
 import type {Metadata} from "next";
-import {
-    Bricolage_Grotesque,
-    Geist,
-    Geist_Mono,
-    Host_Grotesk,
-    Inter_Tight,
-    Manrope,
-    Plus_Jakarta_Sans
-} from "next/font/google";
+import {Geist_Mono, Host_Grotesk, Plus_Jakarta_Sans} from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/footer/Footer";
+import {Analytics} from "@vercel/analytics/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const hostGroteskSans = Host_Grotesk({
-  variable: "--font-host-grotesk-sans",
-  subsets: ["latin"],
-});
-
-const bricolagueGrotesqueSans = Bricolage_Grotesque({
-  variable: "--font-bricolage-grotesque-sans",
-  subsets: ["latin"],
+    variable: "--font-host-grotesk-sans",
+    subsets: ["latin"],
 });
 
 const interTightSans = Plus_Jakarta_Sans({
@@ -33,28 +17,29 @@ const interTightSans = Plus_Jakarta_Sans({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Webique Agency",
-  description: "Professional web development agency creating custom websites, digital experiences and SaaS solutions. Expert team delivering modern, scalable websites that drive business growth and customer engagement.",
+    title: "Webique Agency",
+    description: "Professional web development agency creating custom websites, digital experiences and SaaS solutions. Expert team delivering modern, scalable websites that drive business growth and customer engagement.",
 };
 
 export default function RootLayout({children}: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
 
-  return (
-      <html lang="en">
-      <body className={`${interTightSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
-      <main>
-        <Navbar/>
-        {children}
-      </main>
-      <Footer/>
-      </body>
-      </html>
-  );
+    return (
+        <html lang="en">
+        <body className={`${interTightSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
+        <main>
+            <Navbar/>
+            {children}
+            <Analytics />
+        </main>
+        <Footer/>
+        </body>
+        </html>
+    );
 }
