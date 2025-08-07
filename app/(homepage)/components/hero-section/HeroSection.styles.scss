@@ -9,6 +9,7 @@
   height: 85dvh;
   background: url("../../../../public/hero-bg-dark-v2.png") center center no-repeat;
   background-size: cover;
+  margin-bottom: 3rem;
 
   @media (max-width: 1280px) {
     flex-direction: column;

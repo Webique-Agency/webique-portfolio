@@ -18,7 +18,7 @@ export default function TestimonialSection() {
 							<div className="author-wrapper">
 								<p className="primary-color">{testimonial.from}</p>
 								<p className="light-text">
-									{testimonial.role} - <Link className="primary-accent" href={testimonial.link} target={"_blank"}>
+									{testimonial.role} — <Link className="primary-accent" href={testimonial.link} target={"_blank"}>
 									{testimonial.firm}
 								</Link>
 								</p>

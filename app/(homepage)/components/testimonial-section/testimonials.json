@@ -22,5 +22,13 @@
     "role": "Manager and Personal Trainer",
     "firm": "MegaGym",
     "link": "https://megagym.rs/"
+  },
+  {
+    "avatar": "/testimonial-images/matpromet.jpg",
+    "text": "Working with [Agency Name] to build our ecommerce platform was the best decision we made for our business. They delivered a fully functional, mobile-optimized store that increased our conversion rate by 40% within the first month. What impressed me most was their attention to detail and proactive problem-solving. They anticipated issues we hadn't even considered and built solutions before they became problems.",
+    "from": "Milutin Kamenović",
+    "role": "Co-Owner",
+    "firm": "Mat Promet",
+    "link": "https://matpromet-eshop.com"
   }
 ]

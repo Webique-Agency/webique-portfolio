@@ -1,14 +1,13 @@
 @use "../../../common";
 
 .testimonial-cards-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 1rem;
   gap: 2rem;
 
-  @media (max-width: 1360px) {
-    flex-direction: column;
+  @media (max-width: 745px) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 
   .testimonial-card-content {
@@ -25,6 +24,7 @@
     img {
       width: 3rem !important;
       height: 3rem !important;
+      border-radius: 1000px;
     }
 
     .testimonial-text-wrapper {
