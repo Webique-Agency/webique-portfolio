@@ -6,17 +6,18 @@ import ProjectsSection from "@/app/(homepage)/components/projects-section/Projec
 import WhyWeStandOutSection from "@/app/(homepage)/components/why-we-stand-out-section/WhyWeStandOutSection";
 import OurApproachSection from "@/app/(homepage)/components/our-approach-section/OurApproachSection";
 import PageTransition from "@/app/components/page-transitions/PageTransition";
+import RebrandSection from "@/app/(homepage)/components/rebrand/RebrandSection";
 
 export default function Home() {
-    return (
-        <PageTransition>
-            <HeroSection/>
-            <SuccessSection/>
-            <ServicesSection/>
-            <ProjectsSection/>
-            <TestimonialSection/>
-            <WhyWeStandOutSection/>
-            <OurApproachSection/>
-        </PageTransition>
-    );
+  return (
+    <PageTransition>
+      <RebrandSection/>
+      {/*<SuccessSection/>*/}
+      {/*<ServicesSection/>*/}
+      {/*<ProjectsSection/>*/}
+      {/*<TestimonialSection/>*/}
+      {/*<WhyWeStandOutSection/>*/}
+      {/*<OurApproachSection/>*/}
+    </PageTransition>
+  );
 }

@@ -34,11 +34,11 @@ export default function RootLayout({children}: Readonly<{
         <html lang="en">
         <body className={`${interTightSans.variable} ${hostGroteskSans.variable} ${geistMono.variable} antialiased`}>
         <main>
-            <Navbar/>
+            {/*<Navbar/>*/}
             {children}
             <Analytics />
         </main>
-        <Footer/>
+        {/*<Footer/>*/}
         </body>
         </html>
     );
