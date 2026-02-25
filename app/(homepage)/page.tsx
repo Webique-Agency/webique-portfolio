@@ -11,13 +11,14 @@ import RebrandSection from "@/app/(homepage)/components/rebrand/RebrandSection";
 export default function Home() {
   return (
     <PageTransition>
-      <RebrandSection/>
-      {/*<SuccessSection/>*/}
-      {/*<ServicesSection/>*/}
-      {/*<ProjectsSection/>*/}
-      {/*<TestimonialSection/>*/}
-      {/*<WhyWeStandOutSection/>*/}
-      {/*<OurApproachSection/>*/}
+      <HeroSection/>
+      {/*<RebrandSection/>*/}
+      <SuccessSection/>
+      <ServicesSection/>
+      <ProjectsSection/>
+      <TestimonialSection/>
+      <WhyWeStandOutSection/>
+      <OurApproachSection/>
     </PageTransition>
   );
 }
